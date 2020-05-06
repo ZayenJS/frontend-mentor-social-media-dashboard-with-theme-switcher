@@ -1,4 +1,213 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+.container {
+  padding: 2rem;
+  margin-top: 8rem;
+  z-index: 10;
+  position: relative;
+}
+
+.success {
+  color: #1db489;
+}
+
+.failure {
+  color: #dc414c;
+}
+
+.header {
+  font-size: 1.2rem;
+  padding: 0 1rem 5rem;
+  background-color: #f8f9fe;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0 0 25px 25px;
+}
+
+.header__info {
+  padding: 1rem 0;
+  border-bottom: 1px solid #888;
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-bottom: 0.3rem;
+}
+
+.header__followers, .toggle__label {
+  font-size: 0.7em;
+  font-weight: bold;
+  color: #888;
+}
+
+.toggle__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 1rem 0;
+}
+
+.cards__container--big {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.card--big {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  position: relative;
+  background-color: #f0f3fa;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 2rem;
+  min-height: 14rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 1rem 0;
+}
+
+.card--big:nth-child(1) {
+  border-top: 4px solid deepskyblue;
+}
+
+.card--big:nth-child(2) {
+  border-top: 4px solid #1ca0f2;
+}
+
+.card--big:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 25px 25px 0 0;
+  background: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background: linear-gradient(to right, #fdc468, #df4996);
+}
+
+.card--big:nth-child(4) {
+  border-top: 4px solid #c4032a;
+}
+
+.card__userinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.card__username {
+  font-size: 0.8em;
+  color: #888;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.card__followers-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.card__followers-number span:first-child {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.card__followers-number span:nth-child(2) {
+  letter-spacing: 5px;
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+.card__daily-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.card__daily-stats span:nth-child(2) {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.attribution {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
 /*# sourceMappingURL=main.css.map */

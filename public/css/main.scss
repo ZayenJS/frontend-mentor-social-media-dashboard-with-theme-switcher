@@ -3,3 +3,24 @@
 body {
 	font-family: "Inter", sans-serif;
 }
+
+.container {
+	padding: 2rem;
+	margin-top: 8rem;
+	z-index: 10;
+	position: relative;
+}
+
+.success {
+	color: $lime-green;
+}
+
+.failure {
+	color: $bright-red;
+}
+
+@import "./header";
+
+@import "./cards";
+
+@import "./footer";
