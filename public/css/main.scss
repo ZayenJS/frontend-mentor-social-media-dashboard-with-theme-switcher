@@ -4,6 +4,37 @@ body {
 	font-family: "Inter", sans-serif;
 }
 
+.dark-theme {
+	&-desaturated {
+		color: $desaturated-blue !important;
+	}
+
+	&-white {
+		color: #fff !important;
+	}
+
+	&-background {
+		background: $dark-theme-background !important;
+	}
+
+	&-header-background {
+		background-color: $dark-theme-header-background !important;
+	}
+
+	&-card-background {
+		background-color: $dark-theme-card-background !important;
+	}
+
+	&-slider-active {
+		transform: translateX(-26px) !important;
+		background-color: $dark-theme-background !important;
+	}
+
+	&-slider-background {
+		background: $light-toggle !important;
+	}
+}
+
 .container {
 	padding: 2rem;
 	margin-top: 8rem;
@@ -29,5 +60,8 @@ body {
 @import "./big-cards";
 
 @import "./_overview.scss";
+
+.card {
+}
 
 @import "./footer";

@@ -2,6 +2,37 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.dark-theme-desaturated {
+  color: #8b97c6 !important;
+}
+
+.dark-theme-white {
+  color: #fff !important;
+}
+
+.dark-theme-background {
+  background: #1e202a !important;
+}
+
+.dark-theme-header-background {
+  background-color: #1f212e !important;
+}
+
+.dark-theme-card-background {
+  background-color: #252a41 !important;
+}
+
+.dark-theme-slider-active {
+  -webkit-transform: translateX(-26px) !important;
+          transform: translateX(-26px) !important;
+  background-color: #1e202a !important;
+}
+
+.dark-theme-slider-background {
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82)) !important;
+  background: linear-gradient(to right, #378fe6, #3eda82) !important;
+}
+
 .container {
   padding: 2rem;
   margin-top: 8rem;
@@ -135,26 +166,25 @@ body {
   height: 0;
 }
 
-#toggle__btn input:focus + .slider {
+#toggle__btn input:focus + .slider__container {
   -webkit-box-shadow: 0 0 1px #2196f3;
           box-shadow: 0 0 1px #2196f3;
 }
 
-#toggle__btn--round {
+#toggle__btn .slider__container {
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #aeb3cb;
   -webkit-transition: 400ms;
   transition: 400ms;
   border-radius: 34px;
 }
 
-#toggle__btn--round::before {
-  content: "";
+#toggle__btn .slider__circle {
   position: absolute;
   height: 16px;
   width: 16px;

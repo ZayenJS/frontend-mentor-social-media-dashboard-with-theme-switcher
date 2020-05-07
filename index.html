@@ -17,25 +17,28 @@
 		/>
 		<link rel="stylesheet" href="./public/css/reset.css" />
 		<link rel="stylesheet" href="./public/css/main.css" />
+		<script src="/public/js/main.js" defer></script>
 	</head>
 	<body>
 		<header class="header">
 			<div class="header__container">
 				<div class="header__info">
-					<h1 class="header__title">
+					<h1 class="header__title white">
 						Social Media Dashboard
 					</h1>
-					<span class="header__followers">
+					<span class="header__followers desaturated">
 						Total Followers: 23,004
 					</span>
 				</div>
 				<label for="mode--toggle" class="header__toggle__label">
-					<span class="mode">
+					<span class="mode desaturated">
 						Dark Mode
 					</span>
 					<span id="toggle__btn">
 						<input type="checkbox" />
-						<span class="slider" id="toggle__btn--round"></span>
+						<span class="slider__container">
+							<span class="slider__circle"></span>
+						</span>
 					</span>
 				</label>
 			</div>
@@ -50,11 +53,11 @@
 								alt="icon-facebook"
 								class="icon--facebook"
 							/>
-							<span class="card__username">@nathanf</span>
+							<span class="card__username desaturated">@nathanf</span>
 						</div>
 						<div class="card__followers-number">
-							<span>1987</span>
-							<span>Followers</span>
+							<span class="white">1987</span>
+							<span class="desaturated">Followers</span>
 						</div>
 						<div class="card__daily-stats success">
 							<img src="public/images/icon-up.svg" alt="icon-up" />
@@ -68,11 +71,11 @@
 								alt="icon-twitter"
 								class="icon--twitter"
 							/>
-							<span class="card__username">@nathanf</span>
+							<span class="card__username desaturated">@nathanf</span>
 						</div>
 						<div class="card__followers-number">
-							<span>1044</span>
-							<span>Followers</span>
+							<span class="white">1044</span>
+							<span class="desaturated">Followers</span>
 						</div>
 						<div class="card__daily-stats success">
 							<img src="public/images/icon-up.svg" alt="icon-up" />
@@ -86,11 +89,11 @@
 								alt="icon-instagram"
 								class="icon--instagram"
 							/>
-							<span class="card__username">@realnathanf</span>
+							<span class="card__username desaturated">@realnathanf</span>
 						</div>
 						<div class="card__followers-number">
-							<span>11k</span>
-							<span>Followers</span>
+							<span class="white">11k</span>
+							<span class="desaturated">Followers</span>
 						</div>
 						<div class="card__daily-stats success">
 							<img src="public/images/icon-up.svg" alt="icon-up" />
@@ -104,11 +107,11 @@
 								alt="icon-youtube"
 								class="icon--youtube"
 							/>
-							<span class="card__username">Nathan F.</span>
+							<span class="card__username desaturated">Nathan F.</span>
 						</div>
 						<div class="card__followers-number">
-							<span>8239</span>
-							<span>Subscribers</span>
+							<span class="white">8239</span>
+							<span class="desaturated">Subscribers</span>
 						</div>
 						<div class="card__daily-stats failure">
 							<img src="public/images/icon-down.svg" alt="icon-down" />
@@ -117,13 +120,13 @@
 					</article>
 				</div>
 				<section class="overview">
-					<h2>
+					<h2 class="white">
 						Overview - Today
 					</h2>
 					<div class="cards__container">
 						<article class="card card--small">
 							<div>
-								<span>
+								<span class="desaturated">
 									Page Views
 								</span>
 								<img
@@ -133,7 +136,7 @@
 								/>
 							</div>
 							<div>
-								<span>
+								<span class="white">
 									87
 								</span>
 								<span class="success">
@@ -144,7 +147,7 @@
 						</article>
 						<article class="card card--small">
 							<div>
-								<span>
+								<span class="desaturated">
 									Likes
 								</span>
 								<img
@@ -154,7 +157,7 @@
 								/>
 							</div>
 							<div>
-								<span>
+								<span class="white">
 									52
 								</span>
 								<span class="failure">
@@ -165,7 +168,7 @@
 						</article>
 						<article class="card card--small">
 							<div>
-								<span>
+								<span class="desaturated">
 									Likes
 								</span>
 								<img
@@ -175,7 +178,7 @@
 								/>
 							</div>
 							<div>
-								<span> 5462 </span
+								<span class="white">5462</span
 								><span class="success">
 									<img src="public/images/icon-up.svg" alt="icon-up" />
 									2257%
@@ -184,7 +187,7 @@
 						</article>
 						<article class="card card--small">
 							<div>
-								<span>
+								<span class="desaturated">
 									Profile Views
 								</span>
 								<img
@@ -194,8 +197,8 @@
 								/>
 							</div>
 							<div>
-								<span> 52k </span
-								><span class="success">
+								<span class="white">52k</span>
+								<span class="success">
 									<img src="public/images/icon-up.svg" alt="icon-up" />
 									1375%
 								</span>
@@ -203,7 +206,7 @@
 						</article>
 						<article class="card card--small">
 							<div>
-								<span>
+								<span class="desaturated">
 									Retweets
 								</span>
 								<img
@@ -213,7 +216,7 @@
 								/>
 							</div>
 							<div>
-								<span>117</span>
+								<span class="white">117</span>
 								<span class="success">
 									<img src="public/images/icon-up.svg" alt="icon-up" />
 									303%
@@ -222,7 +225,7 @@
 						</article>
 						<article class="card card--small">
 							<div>
-								<span>
+								<span class="desaturated">
 									Likes
 								</span>
 								<img
@@ -232,8 +235,8 @@
 								/>
 							</div>
 							<div>
-								<span> 507 </span
-								><span class="success">
+								<span class="white">507</span>
+								<span class="success">
 									<img src="public/images/icon-up.svg" alt="icon-up" />
 									553%
 								</span>
@@ -241,7 +244,7 @@
 						</article>
 						<article class="card card--small">
 							<div>
-								<span>
+								<span class="desaturated">
 									Likes
 								</span>
 								<img
@@ -251,8 +254,8 @@
 								/>
 							</div>
 							<div>
-								<span> 107 </span
-								><span class="failure">
+								<span class="white">107</span>
+								<span class="failure">
 									<img src="public/images/icon-down.svg" alt="icon-down" />
 									19%
 								</span>
@@ -260,7 +263,7 @@
 						</article>
 						<article class="card card--small">
 							<div>
-								<span>
+								<span class="desaturated">
 									Total Views
 								</span>
 								<img
@@ -270,8 +273,8 @@
 								/>
 							</div>
 							<div>
-								<span> 1407 </span
-								><span class="failure">
+								<span class="white">1407</span>
+								<span class="failure">
 									<img src="public/images/icon-down.svg" alt="icon-down" />
 									12%
 								</span>
