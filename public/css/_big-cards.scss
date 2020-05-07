@@ -1,74 +1,91 @@
-.cards__container--big {
+.cards__container {
 	@include flex(stretch, initial, column nowrap);
-}
-
-.card--big {
-	@include flex(center, space-between, column nowrap);
-	position: relative;
-	background-color: #f0f3fa;
-	border-radius: 5px;
-	font-size: 1rem;
-	padding: 2rem;
-	min-height: 14rem;
-	height: fit-content;
-	margin: 1rem 0;
-}
-
-.card--big:nth-child(1) {
-	border-top: 4px solid $facebook;
-}
-.card--big:nth-child(2) {
-	border-top: 4px solid $twitter;
-}
-.card--big:nth-child(3)::before {
-	content: "";
-	position: absolute;
-	z-index: 20;
-	top: 0;
-	right: 0;
-	left: 0;
-	height: 4px;
-	border-radius: 25px 25px 0 0;
-	background: $insta;
-}
-
-.card--big:nth-child(4) {
-	border-top: 4px solid $youtube;
-}
-
-.card__userinfo {
-	@include flex(center, center, row wrap);
-}
-
-.card__username {
-	font-size: 0.8em;
-	color: #888;
-	font-weight: bold;
-	margin-left: 0.5rem;
-}
-
-.card__followers-number {
-	@include flex(center, center, column nowrap);
-
-	span:first-child {
-		font-size: 3em;
-		font-weight: bold;
-	}
-
-	span:nth-child(2) {
-		letter-spacing: 5px;
-		font-size: 0.9em;
-		color: #666;
-		margin-top: 0.2rem;
+	@include sm {
+		justify-content: space-between;
+		flex-flow: row wrap;
 	}
 }
 
-.card__daily-stats {
-	@include flex(center, center, row wrap);
+.card {
+	&--big {
+		@include flex(center, space-between, column nowrap);
+		position: relative;
+		background-color: #f0f3fa;
+		border-radius: 5px;
+		font-size: 1rem;
+		min-height: 14rem;
+		padding: 2rem;
+		height: fit-content;
+		margin: 1rem 0;
 
-	span:nth-child(2) {
+		@include sm {
+			margin: 1rem 0;
+			min-width: 45%;
+		}
+
+		@include lg {
+			min-width: 22.5%;
+		}
+
+		&:nth-child(1) {
+			border-top: 4px solid $facebook;
+		}
+
+		&:nth-child(2) {
+			border-top: 4px solid $twitter;
+		}
+
+		&:nth-child(3)::before {
+			content: "";
+			position: absolute;
+			z-index: 20;
+			top: 0;
+			right: 0;
+			left: 0;
+			height: 4px;
+			border-radius: 25px 25px 0 0;
+			background: $insta;
+		}
+
+		&:nth-child(4) {
+			border-top: 4px solid $youtube;
+		}
+	}
+
+	&__userinfo {
+		@include flex(center, center, row wrap);
+	}
+
+	&__username {
 		font-size: 0.8em;
+		color: #888;
 		font-weight: bold;
 		margin-left: 0.5rem;
+	}
+
+	&__followers-number {
+		@include flex(center, center, column nowrap);
+
+		span:first-child {
+			font-size: 3em;
+			font-weight: bold;
+		}
+
+		span:nth-child(2) {
+			letter-spacing: 5px;
+			font-size: 0.9em;
+			color: #666;
+			margin-top: 0.2rem;
+		}
+	}
+
+	&__daily-stats {
+		@include flex(center, center, row wrap);
+
+		span:nth-child(2) {
+			font-size: 0.8em;
+			font-weight: bold;
+			margin-left: 0.5rem;
+		}
 	}
 }
