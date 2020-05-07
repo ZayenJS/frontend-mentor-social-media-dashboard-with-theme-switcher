@@ -17,6 +17,7 @@ const app = {
 	},
 
 	toggleDarkMode(e) {
+		console.log(e.target);
 		document.body.classList.toggle("dark-theme-white");
 		document.body.classList.toggle("dark-theme-background");
 		this.domelems.header.classList.toggle("dark-theme-header-background");
