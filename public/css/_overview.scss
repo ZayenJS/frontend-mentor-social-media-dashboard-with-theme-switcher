@@ -1,0 +1,48 @@
+.overview {
+	font-size: 1.2rem;
+	h2 {
+		font-size: 1.2em;
+		font-weight: bold;
+		color: #666;
+	}
+}
+
+.card--small {
+	padding: 1rem 1.5rem;
+	margin: 1rem 0;
+	background-color: #f0f3fa;
+
+	div {
+		@include flex(center, space-between, row wrap);
+
+		span {
+			font-size: 0.8em;
+			margin-top: 1rem;
+		}
+
+		span.success,
+		span.failure {
+			font-size: 0.6em;
+			font-weight: bold;
+		}
+	}
+
+	div:first-child {
+		span:first-child {
+			font-weight: bold;
+			color: #666;
+		}
+
+		span {
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	div:last-child {
+		align-items: baseline;
+		span:first-child {
+			font-weight: bold;
+			font-size: 1.7em;
+		}
+	}
+}
